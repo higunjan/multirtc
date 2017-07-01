@@ -1,4 +1,4 @@
-var port = 12034; // change it to 443
+var port = process.env.PORT || 8080; // change it to 443
 
 var fs = require('fs');
 
@@ -117,4 +117,4 @@ function truncateChannels(websocket) {
     }
 }
 
-console.log('listening both websocket and HTTPs at port 12034');
+console.log('listening both websocket and HTTPs at port ', port);
