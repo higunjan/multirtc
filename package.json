@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "multirtc",
+        "scope": null,
+        "escapedName": "multirtc",
+        "name": "multirtc",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/gunjanpatel/Documents/tmp"
+    ]
+  ],
+  "_from": "multirtc@latest",
+  "_id": "multirtc@7.0.2",
+  "_inCache": true,
+  "_location": "/multirtc",
+  "_npmUser": {
+    "name": "muaz-khan",
+    "email": "muazkh@gmail.com"
+  },
+  "_npmVersion": "1.4.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "multirtc",
+    "scope": null,
+    "escapedName": "multirtc",
+    "name": "multirtc",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "dependencies": {
+    "node-static": "0.7.x",
+    "websocket": "1.0.x"
+  },
+  "description": "1) It is a skype-like demo using WebRTC for realtime connections! 2) It allows you enable/disable webcams; and join with or without webcams! 3) It allows you share screen using existing peer connections! 4) It allows you share files with preview and downl",
+  "devDependencies": {},
+  "directories": {},
+  "engines": {
+    "node": ">=0.6"
+  },
+  "keywords": [
+    "webrtc",
+    "javascript",
+    "RTCMultiConnection",
+    "Node.js",
+    "Library",
+    "audio",
+    "video",
+    "audio-video",
+    "screen-sharing",
+    "file-sharing",
+    "file",
+    "renegotiation",
+    "skype",
+    "text-chat",
+    "multi-user",
+    "WebRTC-Experiment",
+    "video-conferencing",
+    "broadcasting",
+    "hangout",
+    "one-way",
+    "many-to-many",
+    "SCTP",
+    "RTP"
+  ],
+  "license": "MIT",
+  "main": "signaler.js",
+  "name": "multirtc",
+  "optionalDependencies": {},
+  "preferGlobal": false,
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "start": "node signaler.js"
+  },
+  "version": "7.0.2"
+}
