@@ -5,28 +5,28 @@ var fs = require('fs');
 var _static = require('node-static');
 var file = new _static.Server('./public');
 
-/* for HTTP-only
+ //for HTTP-only
 var http = require('http').createServer(function (request, response) {
     request.addListener('end', function () {
         if (request.url.search(/.png|.gif|.js|.css/g) == -1) {
             file.serveFile('/index.html', 402, {}, request, response);
         } else file.serve(request, response);
     }).resume();
-}).listen(port);
-*/
+}).listen(process.env.PORT || 8080);
+
 
 var options = {
     key: fs.readFileSync('privatekey.pem'),
     cert: fs.readFileSync('certificate.pem')
 };
 
-var https = require('https').createServer(options, function (request, response) {
+/*var https = require('https').createServer(options, function (request, response) {
     request.addListener('end', function () {
         if (request.url.search(/.png|.gif|.js|.css/g) == -1) {
             file.serveFile('/index.html', 402, {}, request, response);
         } else file.serve(request, response);
     }).resume();
-}).listen(port);
+}).listen(process.env.PORT || 8080);*/
 
 var CHANNELS = {};
 
