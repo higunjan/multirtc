@@ -33,7 +33,7 @@ var CHANNELS = {};
 var WebSocketServer = require('websocket').server;
 
 new WebSocketServer({
-    httpServer: https,
+    httpServer: http,
     autoAcceptConnections: false
 }).on('request', onRequest);
 
